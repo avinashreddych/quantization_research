@@ -30,6 +30,10 @@ sizes = [
 # %%
 
 
+
+
+
+
 def calculate_time(arithmetic, n, size):
 
     A = torch.rand(size=(size[0], size[1]), dtype=arithmetic, device=device)
