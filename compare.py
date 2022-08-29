@@ -103,7 +103,9 @@ print(
 print(
     f"|         size           |  torch_fp16_time   |  torch_fp32_time  |  tf_fp16_time    |    tf_fp32_time    |   cupy_int8    |    cupy_fp16_time    |    cupy_fp32_time    |"
 )
-print(f"|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|")
+print(
+    f"|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|"
+)
 for size in sizes:
     torch_fp16_time = torch_calculate_time(torch.float16, n, size)
     torch_fp32_time = torch_calculate_time(torch.float, n, size)
