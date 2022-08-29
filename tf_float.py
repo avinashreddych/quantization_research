@@ -1,7 +1,7 @@
 # %%
 import tensorflow as tf
 import time
-
+import cupy as cp
 
 # if torch.cuda.is_available():
 #     print("yes")
