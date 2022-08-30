@@ -56,7 +56,7 @@ print(
 print(
     f"|--------------------------------------------------------------------------------------|"
 )
-n = 1000
+n = 100
 for size in sizes:
     cp_int_time = cupy_int_calculate_time(n, size)
     cp_fp16_time = cupy_calculate_time(cp.float16, n, size)

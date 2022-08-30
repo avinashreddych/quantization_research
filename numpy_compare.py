@@ -18,6 +18,7 @@ sizes = [
     [4096, 16384, 4096],
 ]
 
+
 def numpy_int_calculate_time(n, size):
     A = np.random.randint(low=0, high=255, size=(size[0], size[1]))
     x = np.random.randint(low=0, high=255, size=(size[1], size[2]))
@@ -55,7 +56,7 @@ print(
 print(
     f"|-----------------------------------------------------------------------------------------|"
 )
-n = 1000
+n = 100
 for size in sizes:
     np_int_time = numpy_int_calculate_time(n, size)
     np_fp16_time = numpy_calculate_time(np.float16, n, size)
